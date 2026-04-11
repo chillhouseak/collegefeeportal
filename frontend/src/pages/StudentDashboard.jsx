@@ -235,12 +235,7 @@ const StudentDashboard = () => {
               </span>
             </p>
           </div>
-          <button 
-            onClick={handleLogout}
-            className="px-5 py-2.5 text-sm font-semibold text-red-600 bg-red-50 rounded-lg hover:bg-red-100 transition-colors"
-          >
-            Logout
-          </button>
+          
         </div>
 
         {/* Notifications */}
