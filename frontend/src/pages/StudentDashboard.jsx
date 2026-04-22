@@ -208,13 +208,13 @@ const StudentDashboard = () => {
 
   const handleDownload = (type) => {
     // Open the PDF download link in a new tab (Current Semester)
-    const url = `http://localhost:5000/api/pdf/${type}/${student.enrollmentNumber}`;
+    const url = `https://collegefeeportal.onrender.com/api/pdf/${type}/${student.enrollmentNumber}`;
     window.open(url, '_blank');
   };
 
   // --- NEW: Download Historical Receipt ---
   const handleDownloadHistorical = (transactionId) => {
-    const url = `http://localhost:5000/api/pdf/historical-receipt/${transactionId}`;
+    const url = `https://collegefeeportal.onrender.com/api/pdf/historical-receipt/${transactionId}`;
     window.open(url, '_blank');
   };
 
@@ -258,7 +258,7 @@ const StudentDashboard = () => {
                 <div>
                   <h2 className="text-xl font-bold text-gray-800">Semester Fee Breakdown</h2>
                   <a 
-                    href="http://localhost:5000/uploads/Official_Fee_Structure.pdf" 
+                    href="https://collegefeeportal.onrender.com/uploads/Official_Fee_Structure.pdf" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-sm text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1 mt-1 font-medium"
